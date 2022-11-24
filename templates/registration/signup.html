@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Sign Up{% endblock %}
+{% block title %}Sign Up{% endblock %} <!--message in the title page-->
 
 {% block content %}
-  <h2>Sign up</h2>
+  <h2>Sign up</h2> <!--message in the beginning of page-->
   <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign Up</button>
+    {% csrf_token %} <!--security token-->
+    {{ form.as_p }} <!--form to fill in the new user subscribe-->
+    <button type="submit">Sign Up</button> <!--button to sign up as new user-->
   </form>
 {% endblock %}
