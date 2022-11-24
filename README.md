@@ -13,3 +13,6 @@ Log Out is to exit the account.
 Also, the user can reset their password hiting RESET PASSWORD where they must enter their email address and hit the button send me instructions in order
 to do that!
  
+ A simple poll was created where people can vote in which flavor of ice cream best represents them.
+ So, they have two options to vote which is vanilla and chocolate.
+ Once they select an option and hit vote, a new page will show up showing the poll results.
