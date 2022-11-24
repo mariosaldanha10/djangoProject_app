@@ -16,3 +16,4 @@ to do that!
  A simple poll was created where people can vote in which flavor of ice cream best represents them.
  So, they have two options to vote which is vanilla and chocolate.
  Once they select an option and hit vote, a new page will show up showing the poll results.
+ Also, if they wish to vote again, they can hit the link vote again? and the previous page will show up.
