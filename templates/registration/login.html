@@ -1,13 +1,15 @@
 <!-- templates/registration/login.html -->
 {% extends 'base.html' %}
 
-{% block title %}Login{% endblock %}
+{% block title %}Login{% endblock %} <!--page title-->
 
 {% block content %}
-<h2>Log In</h2>
+<h2>Log In Please</h2> title content on page
 <form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Log In</button>
+  {% csrf_token %} <!--tag that is implemented to avoid malicious attacks.
+    It generates a token on the server-side when rendering the page and makes
+    sure to cross-check this token for any requests coming back in.-->
+  {{ form.as_p }} <!--calling the form-->
+  <button type="submit">Log In</button> <!--button to hit login-->
 </form>
 {% endblock %}

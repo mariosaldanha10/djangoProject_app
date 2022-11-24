@@ -5,20 +5,20 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  <p> Welcome, {{ user.username }}!</p>
+  <p> Welcome, {{ user.username }}!</p> <!--renders the username-->
     <br>
     <ul>
-  <p><a href="{% url 'polls:index' %}" class="btn btn-primary">Polls</a></p>
-  <p><a href="{% url 'logout' %}" class="btn btn-secondary">Log Out</a></p>
-  <p><a href="{% url 'password_reset' %}" class="btn btn-primary">Reset Password</a></p>
+  <p><a href="{% url 'polls:index' %}" class="btn btn-primary">Polls</a></p> <!--renders the polls link-->
+  <p><a href="{% url 'logout' %}" class="btn btn-secondary">Log Out</a></p> <!--renders the logout link-->
+  <p><a href="{% url 'password_reset' %}" class="btn btn-primary">Reset Password</a></p> <!--renders the password reset link-->
     </ul>
 {% else %}
     <ul>
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}" class="btn btn-primary">Log In</a>
+  <p>You are not logged in</p> <!--this text shows when the user is not login already following with the form below to complete the login form-->
+  <a href="{% url 'login' %}" class="btn btn-primary">Log In</a>  <!--that's the login button after user has filled the form to hit the button-->
   <br>
   <br>
-  <a href="{% url 'signup' %}" class="btn btn-primary">Create a New Account</a>
+  <a href="{% url 'signup' %}" class="btn btn-primary">Create a New Account</a> <!--that's the button to create a new account if the user hasn't already created one-->
     </ul>
 {% endif %}
 {% endblock %}
