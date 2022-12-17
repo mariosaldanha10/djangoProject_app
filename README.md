@@ -1,6 +1,6 @@
 22453 Mario Luis Saldanha Santos
 # djangoProject_app
-Assessment mini-project CA1 - Back-end web development
+Assessment mini-project CA1 & 2 - Back-end web development
 
 In this django project, a basic poll application was developed where any people can access a website to view polls and vote in them.
 Also, additional features were implemented to have access to view these polls, and those will be described below.
