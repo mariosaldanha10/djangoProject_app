@@ -1,6 +1,6 @@
 22453 Mario Luis Saldanha Santos
 # djangoProject_app
-Assessment mini-project CA1 & 2 - Back-end web development
+Assessment mini-project CA1, 2 and 3 - Back-end web development
 
 In this django project, a basic poll application was developed where any people can access a website to view polls and vote in them.
 Also, additional features were implemented to have access to view these polls, and those will be described below.
@@ -17,3 +17,13 @@ to do that!
  So, they have two options to vote which is vanilla and chocolate.
  Once they select an option and hit vote, a new page will show up showing the poll results.
  Also, if they wish to vote again, they can hit the link vote again? and the previous page will show up.
+
+
+ADDITIONAL FEATURES (Manual and Automatic testing)
+
+This application was thoroughly tested with a combination of manual and automatic testing methodologies. Each function of the application was tested with positive and negative tests, and each test included a set of assertions to verify that the function worked as expected. The application includes two configuration files, one for development and another for testing, which ensures that the test database is separate from the development database. The test coverage report shows that over 90% of the code is covered by tests, which means that the application is stable and reliable.
+
+
+In the web application, we have implemented two additional security measures to prevent hacking attacks. The first measure is to prevent SQL injection attacks. We have modified the implementation of the vote view to use parameterized queries instead of constructing raw SQL queries using string concatenation. This ensures that the input is properly sanitized and prevents SQL injection attacks. We have also used the transaction.atomic context manager to ensure that the query is executed in a single transaction, which ensures consistency and prevents data corruption in case of errors.
+The second measure is to prevent Cross-Site Scripting (XSS) attacks. We have used Django's built-in protection against XSS attacks by using the escape template filter. This automatically escapes any potentially dangerous characters in user input, ensuring that any special characters are properly encoded and cannot be interpreted as HTML or JavaScript. By implementing these two security measures, we have significantly improved the security of the web application and reduced the risk of hacking attacks.
+
