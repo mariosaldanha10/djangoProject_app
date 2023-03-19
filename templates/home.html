@@ -5,7 +5,10 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  <p> Welcome, {{ user.username }}!</p> <!--renders the username-->
+    <!--Cross-Site Scripting (XSS) Prevention: We can use Django's built-in protection against XSS attacks by using the escape template filter.
+    This will automatically escape any potentially dangerous characters in user input.-->
+  <p> Welcome, {{ user.username|escape }}!</p> <!--renders the username-->
+    <!--This will ensure that any special characters are properly encoded and cannot be interpreted as HTML or JavaScript.-->
     <br>
     <ul>
   <p><a href="{% url 'polls:index' %}" class="btn btn-primary">Polls</a></p> <!--renders the polls link-->
