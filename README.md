@@ -1,6 +1,6 @@
 22453 Mario Luis Saldanha Santos
 # djangoProject_app
-<h1><b>Assessment mini-project CA1, 2 and 3 - Back-end web development</b></h1>
+<h3><b>Assessment mini-project CA1, 2 and 3 - Back-end web development</b></h3>
 
 In this django project, a basic poll application was developed where any people can access a website to view polls and vote in them.
 Also, additional features were implemented to have access to view these polls, and those will be described below.
@@ -19,7 +19,7 @@ to do that!
  Also, if they wish to vote again, they can hit the link vote again? and the previous page will show up.
 
 
-<h2><b>ADDITIONAL FEATURES (Manual and Automatic testing) -> Continuous Assessment 3</b></h2>
+<h3><b>ADDITIONAL FEATURES (Manual and Automatic testing) -> Continuous Assessment 3</b></h3>
 
 This application was thoroughly tested with a combination of manual and automatic testing methodologies. Each function of the application was tested with positive and negative tests, and each test included a set of assertions to verify that the function worked as expected. The application includes two configuration files, one for development and another for testing, which ensures that the test database is separate from the development database. The test coverage report shows that over 90% of the code is covered by tests, which means that the application is stable and reliable.
 
