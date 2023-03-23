@@ -27,3 +27,6 @@ This application was thoroughly tested with a combination of manual and automati
 In the web application, we have implemented two additional security measures to prevent hacking attacks. The first measure is to prevent SQL injection attacks. We have modified the implementation of the vote view to use parameterized queries instead of constructing raw SQL queries using string concatenation. This ensures that the input is properly sanitized and prevents SQL injection attacks. We have also used the transaction.atomic context manager to ensure that the query is executed in a single transaction, which ensures consistency and prevents data corruption in case of errors.
 The second measure is to prevent Cross-Site Scripting (XSS) attacks. We have used Django's built-in protection against XSS attacks by using the escape template filter. This automatically escapes any potentially dangerous characters in user input, ensuring that any special characters are properly encoded and cannot be interpreted as HTML or JavaScript. By implementing these two security measures, we have significantly improved the security of the web application and reduced the risk of hacking attacks.
 
+command to run the tests: python manage.py test
+
+
