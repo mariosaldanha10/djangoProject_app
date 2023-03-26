@@ -12,7 +12,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 
-
 WSGI_APPLICATION = 'djangoProject_app.wsgi.application'
 
 # Database
