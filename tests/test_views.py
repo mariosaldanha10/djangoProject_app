@@ -2,6 +2,7 @@ from django.contrib.auth.models import User
 from django.test import TestCase, Client
 from django.urls import reverse
 
+#run the code using python manage.py test
 
 class LoginTestCase(TestCase):
     # The setUp method is run before each test method
